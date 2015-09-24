@@ -1,5 +1,5 @@
-var express = require('express'),
-    app = express();
+var express = require('express');
+var app = express();
 
 function run_cmd(cmd, args, callback) {
 	var spawn = require('child_process').spawn;
