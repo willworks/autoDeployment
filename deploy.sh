@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PATH='./'
-USER='root'
-USERGROUP='root'
+$PATH='./'
+$USER='root'
+$USERGROUP='root'
 
 echo "Start autoDeployment"
 cd $PATH
