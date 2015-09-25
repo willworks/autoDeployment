@@ -15,7 +15,7 @@ Github为每个仓库(repository)都可以设置一个或多个自己专属的�
 
 当有push代码的时候，Github会POST一个请求到设置的服务器地址(Payloads URL)
 
-服务器通过监测POST，校验参数，就可以执行shell脚本进行git pull更新代码，shell命令为用github上最新的代码覆盖，不管服务器代码发生什么变化
+服务器通过监测POST，校验参数，就可以执行shell脚本进行git pull更新代码
 
 		#!/bin/bash
 
