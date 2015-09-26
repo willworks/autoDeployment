@@ -13,6 +13,8 @@ function run_cmd(cmd, args, callback) {
 // 触发push事件的时候，可以发起一个POST请求
 // 处理github POST请求
 app.post('/', function(req, res){
+	// 头部识别，做为安全的一小步
+	// 若去掉，当当发起一个POST就能引起shell执行，可以引发安全问题
 	if(req.headers["x-github-event"]=='push'){
 		run_cmd('sh', ['deploy.sh'], function(text){console.log(text);});
 	}
