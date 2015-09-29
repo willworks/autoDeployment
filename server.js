@@ -1,5 +1,14 @@
+/** 
+    Document   : autoDeployment
+    Created on : 2015.9
+    Author     : Kevin Zhong
+    License    : MIT
+    github     : https://github.com/willworks/autoDeployment/ 
+    Description: Github webhook 实现检测push事件，生产环境自动部属
+    Copyright (c) 2015 Kevin Zhong
+*/
 var express = require('express');
-var app = express();
+	app = express();
 
 function run_cmd(cmd, args, callback) {
 	var spawn = require('child_process').spawn;
